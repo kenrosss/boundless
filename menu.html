@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Boundless Bowls</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="yeah.js"></script>
+</head>
+<body>
+  <div class="wrapper">
+
+    <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; padding: 10px 20px; gap: 10px;">
+      <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 10px;">
+        <img src="dakilang_logo.jpg" alt="Logo" style="height: 100px;">
+        <h1 style="margin: 0;">Boundless Bowls</h1>
+      </div>
+      <nav class="navbar" style="width: 100%; text-align: center;">
+        <div class="nav-links" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin-top: 10px;">
+          <a href="index.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="about.html">About/Contact</a>
+          <a href="cart.html" class="cart-count">Cart (0)</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+
+      <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000;">Ramen</h2>
+
+      <div class="menu-item">
+        <img src="Shoyu-Ramen.jpg" alt="Shoyu Ramen" class="best-seller-img">
+        <p>Shoyu Ramen - ₱250</p>
+        <button onclick="addToCart('Shoyu Ramen', 250)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Shoyu Ramen', 250)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="tonkotsu-ramen.jpg" alt="Tonkotsu Ramen" class="best-seller-img">
+        <p>Tonkotsu Ramen - ₱300</p>
+        <button onclick="addToCart('Tonkotsu Ramen', 300)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Tonkotsu Ramen', 300)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="miso_ramen.jpg" alt="Miso Ramen" class="best-seller-img">
+        <p>Miso Ramen - ₱280</p>
+        <button onclick="addToCart('Miso Ramen', 280)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Miso Ramen', 280)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="spicy_tantanmen.webp" alt="Spicy Tantanmen" class="best-seller-img">
+        <p>Spicy Tantanmen - ₱310</p>
+        <button onclick="addToCart('Spicy Tantanmen', 310)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Spicy Tantanmen', 310)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="shio-ramen.jpg" alt="Shio Ramen" class="best-seller-img">
+        <p>Shio Ramen - ₱260</p>
+        <button onclick="addToCart('Shio Ramen', 260)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Shio Ramen', 260)">Buy Now</button></a>
+      </div>
+
+      <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000;">Appetizers</h2>
+
+      <div class="menu-item">
+        <img src="gyoza.jpg" alt="Gyoza" class="best-seller-img">
+        <p>Gyoza (5 pcs) - ₱150</p>
+        <button onclick="addToCart('Gyoza', 150)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Gyoza', 150)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="takoyaki.jpg" alt="Takoyaki" class="best-seller-img">
+        <p>Takoyaki (4 pcs) - ₱140</p>
+        <button onclick="addToCart('Takoyaki', 140)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Takoyaki', 140)">Buy Now</button></a>
+      </div>
+
+      <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000;">Dessert</h2>
+
+      <div class="menu-item">
+        <img src="mochi.webp" alt="Mochi Ice Cream" class="best-seller-img">
+        <p>Mochi Ice Cream (2 pcs) - ₱100</p>
+        <button onclick="addToCart('Mochi Ice Cream', 100)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Mochi Ice Cream', 100)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="anmitsu.webp" alt="Anmitsu" class="best-seller-img">
+        <p>Anmitsu (2 pcs) - ₱110</p>
+        <button onclick="addToCart('Anmitsu', 110)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Anmitsu', 110)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="matcha_cheesecake.jpg" alt="Matcha Cheesecake" class="best-seller-img">
+        <p>Matcha Cheesecake slice (1 pc) - ₱120</p>
+        <button onclick="addToCart('Matcha Cheesecake slice', 120)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Matcha Cheesecake slice', 120)">Buy Now</button></a>
+      </div>
+
+      <h2 style="margin-top: 40px; border-bottom: 2px solid #8B0000;">Beverages</h2>
+
+      <div class="menu-item">
+        <img src="matcha-boba-tea.jpg" alt="Matcha Milk Tea" class="best-seller-img">
+        <p>Matcha Milk Tea - ₱120</p>
+        <button onclick="addToCart('Matcha Milk Tea', 120)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Matcha Milk Tea', 120)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="icedteaone.jpg" alt="Iced Calamansi Tea" class="best-seller-img">
+        <p>Iced Calamansi Tea - ₱90</p>
+        <button onclick="addToCart('Iced Calamansi Tea', 90)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Iced Calamansi Tea', 90)">Buy Now</button></a>
+      </div>
+
+      <div class="menu-item">
+        <img src="ramune.webp" alt="Ramune Soda" class="best-seller-img">
+        <p>Ramune Soda - ₱105</p>
+        <button onclick="addToCart('Ramune Soda', 105)">Add to Cart</button>
+        <a href="cart.html"><button onclick="addToCart('Ramune Soda', 105)">Buy Now</button></a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Boundless Bowls. All rights reserved.</p>
+    <p>📍 Silang, Cavite | 📞 0947-107-1649 | ✉️ Boundlessbowls@email.com</p>
+  </footer>
+</body>
+</html>
